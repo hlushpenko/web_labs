@@ -1,5 +1,9 @@
+function saveGroups(groups) {
+    localStorage.setItem("groups_data", JSON.stringify(groups));
+}
+
 var groups = localStorage.getItem('groups_data');
-if(localStorage.getItem("groups_data") === null) {
+if (localStorage.getItem("groups_data") === null) {
     groups = [
         {
             number: 301,
@@ -10,6 +14,7 @@ if(localStorage.getItem("groups_data") === null) {
             faculty: 'Computer network'
         }
     ];
-    localStorage.setItem("groups_data", JSON.stringify(groups)); } else {
+    localStorage.setItem("groups_data", JSON.stringify(groups));
+} else {
     groups = JSON.parse(groups);
 }

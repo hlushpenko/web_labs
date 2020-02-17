@@ -1,4 +1,31 @@
 $("document").ready(function () {
+    var rowText;
+    var content = $('#groups');
+    for (var row of groups) {
+        rowText =
+            `<tr>
+                <td>${row.number}</td>
+                <td>  ${row.faculty}</td>
+                <td class="text-right">
+                    <a class="btn btn-outline-secondary" href="group.html?number=${row.number}">
+                        <i class="fa fa-fw fa-edit"></i>
+                    </a>
+                    <button type = "button" class="btn btn-outline-danger rem-row" rowid="${row.number}">
+                        <i class="fa fa-fw fa-trash"></i>
+                    </button>
+                </td>  
+            </tr>`;
+        content.append(rowText);
+    }
+    $('.rem-row').click(function () {
+        let number = $(this).attr('rowid');
+        saveGroups(groups.filter((g)=>g.number !== number));
+        location.reload();
+    });
+
+
+
+
     $('#click-me').click(function () {
         var html = `<div class="text-left alert alert-success" role="alert">
           <h4 class="alert-heading"> Привіт!
@@ -12,22 +39,4 @@ $("document").ready(function () {
       </div>`;
         $('#alert').html(html);
     });
-
-    var rowText;
-    var content = $('#groups');
-    for (var row of groups) {
-        rowText =
-            `<tr>
-            <td>${row.number}</td>
-            <td class="text-right">
-            <a class="btn btn-outline-secondary" href="group.html?number=${row.number}">
-            <i class="fa fa-fw fa-edit"></i>
-            </a>
-            <button type = "button" class="btn btn-outline-danger rem-row" rowid="${row.number}">
-            <i class="fa fa-fw fa-trash"></i>
-            </button>
-            </td>  
-            </tr>`;
-        content.append(rowText);
-    }
-})
+});
