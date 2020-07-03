@@ -6,60 +6,53 @@
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
-    <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">-->
+    <!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>-->
+
     <script src="js/my.js"></script>
     <script src="js/data.js"></script>
     <script src="js/group.js"></script>
 </head>
 <body>
-<section class="section">
-    <div class="container">
-        <nav class="navbar is-fixed-top background-dark">
-            <h3 class="has-text-white has-text-centered">
-                Студентські Група
-            </h3>
-        </nav>
-        <div style="margin-top: 20px"></div>
 
+<nav>
+    <div class="nav-wrapper">
+        <a class="brand-logo">Група</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
 
         <form>
-            <div class="field-is-horizontal">
-                <div class="field-label is normal">
-                    <label class="label">Номер групи</label>
-                </div>
-                <div class="field-body">
-                    <div class="field">
-                        <p class="control">
-                            <input type="email" class="input" id="number" placeholder="Номер групи">
-                        </p>
-                    </div>
-                </div>
+            <div class="input-field col s12">
+                <input type="text" class="validate" id="number">
+                <label for="number">Номер групи</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input type="text" class="validate" id="faculty">
+                <label for="faculty">Факультет</label>
             </div>
 
 
-            <div class="field-is-horizontal">
-                <div class="field-label is normal">
-                    <label class="label">Факультет</label>
-                </div>
-                <div class="field-body">
-                    <div class="field">
-                        <p class="control">
-                            <input type="email" class="input" id="faculty" placeholder="Факультет">
-                        </p>
-                    </div>
-                </div>
+            <div class="input-field col s12 right-align">
+                <a id="save" class="btn-floating btn-large waves-effects waves-light green">
+                    <i class="material-icons">OK</i>
+                </a>
             </div>
-
-
-            <button type="button" id="save" class="button is-primary">Зберегти</button>
         </form>
 
     </div>
-</section>
+</div>
 </body>
 </html>

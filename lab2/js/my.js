@@ -6,12 +6,12 @@ $("document").ready(function () {
             `<tr>
                 <td>${row.number}</td>
                 <td>  ${row.faculty}</td>
-                <td class="has-text-right">
-                    <a class="button is-link" href="group.html?number=${row.number}">
-                        <i class="fa fa-fw fa-edit"></i>
+                <td class="right-align">
+                    <a class="btn floating waves-effect waves-light blue" style="margin-right: 10px" href="group.html?number=${row.number}">
+                        <i class="material-icons">edit</i>
                     </a>
-                    <button type = "button" class="button is-danger rem-row" rowid="${row.number}">
-                        <i class="fa fa-fw fa-trash"></i>
+                    <button type = "button" class="rem-row btn floating waves-effect waves-light red" rowid="${row.number}">
+                        <i class="material-icons">remove</i>
                     </button>
                 </td>  
             </tr>`;

@@ -6,7 +6,14 @@
         Головна
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">-->
     <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -17,22 +24,24 @@
 </head>
 <body>
 
+<nav>
+    <div class="nav-wrapper">
+        <a class="brand-logo">Групи</a>
+    </div>
+</nav>
 
-<section class="section">
-    <div class="container">
-        <nav class="navbar is-fixed-top has-background-dark">
-            <h3 class="has-text-white has-text-centered">
-                Студентські Групи
-            </h3>
-        </nav>
 
-        <div style="margin: 20px">
-            <a href="group.html" href="" class="button is-primary">
-                <i class="fa fa-fw fa-plus"></i>
-            </a>
-        </div>
+<div class="container" style="margin-top: 20px"></div>
 
-        <table class="table is-fullwidth has-margin-top-2">
+<div class="col m6 offset-m3 s12">
+    <a href="group.html" href="" class="btn-floating btn-large waves-effect waves-light green">
+        <i class="material-icons">+</i>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col m6 offset-m3 s12 no-padding">
+        <table class="stripped">
             <thead>
             <tr>
                 <th scope="col">Група</th>
@@ -42,7 +51,7 @@
             <tbody id="groups"></tbody>
         </table>
     </div>
-</section>
+</div>
 </body>
 
 </html>
