@@ -8,10 +8,10 @@ $("document").ready(function () {
                 <td>  ${row.faculty}</td>
                 <td class="right-align">
                     <a class="btn floating waves-effect waves-light blue" style="margin-right: 10px" href="group.html?number=${row.number}">
-                        <i class="material-icons">edit</i>
+                        <i class="material-icons fa fa-fw fa-edit"></i>
                     </a>
                     <button type = "button" class="rem-row btn floating waves-effect waves-light red" rowid="${row.number}">
-                        <i class="material-icons">remove</i>
+                        <i class="material-icons fa fa-fw fa-trash"></i>
                     </button>
                 </td>  
             </tr>`;
