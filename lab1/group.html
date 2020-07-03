@@ -6,37 +6,60 @@
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+    <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
     <script src="js/my.js"></script>
     <script src="js/data.js"></script>
     <script src="js/group.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Студентська Група</a>
-</nav>
-<div class="container mt-3">
-    <div class="row">
-        <div class="col">
-            <form>
-                <div class="form-group">
-                    <label for="number">Номер групи</label>
-                    <input type="text" class="form-control" id="number" placeholder="Номер групи">
-                </div>
+<section class="section">
+    <div class="container">
+        <nav class="navbar is-fixed-top background-dark">
+            <h3 class="has-text-white has-text-centered">
+                Студентські Група
+            </h3>
+        </nav>
+        <div style="margin-top: 20px"></div>
 
-                <div class="form-group">
-                    <label for="faculty">Факультет</label>
-                    <input type="text" class="form-control" id="faculty" placeholder="Факультет">
-                </div>
 
-                <button type="button" id="save" class="btn btn-secondary">Зберегти</button>
-            </form>
-        </div>
+        <form>
+            <div class="field-is-horizontal">
+                <div class="field-label is normal">
+                    <label class="label">Номер групи</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input type="email" class="input" id="number" placeholder="Номер групи">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field-is-horizontal">
+                <div class="field-label is normal">
+                    <label class="label">Факультет</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input type="email" class="input" id="faculty" placeholder="Факультет">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="button" id="save" class="button is-primary">Зберегти</button>
+        </form>
+
     </div>
-</div>
+</section>
 </body>
 </html>
