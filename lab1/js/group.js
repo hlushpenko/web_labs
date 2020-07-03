@@ -6,7 +6,6 @@ $("document").ready(function () {
         let group = groups.find((g)=>g.number == number);
         $('#number').val(group.number);
         $('#faculty').val(group.faculty);
-        $('label').addClass('active');
     }
 
     $('#save').click(function () {
